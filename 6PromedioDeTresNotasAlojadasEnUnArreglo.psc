@@ -4,14 +4,11 @@ Algoritmo PromedioDeTresNotasAlojadasEnUnArreglo
     Definir notas, promedio, suma Como Real
     
     Dimension notas[3]
-    
-    Escribir "Ingrese la nota de la primera asignatura:"
-    Leer notas[1]
-    Escribir "Ingrese la nota de la segunda asignatura:"
-    Leer notas[2]
-    Escribir "Ingrese la nota de la tercera asignatura:"
-    Leer notas[3]
-    
+    Para i <- 1 Hasta 3 Con Paso 1
+        Escribir "Ingrese la nota de la asignatura ", i, ":"
+        Leer notas[i]
+    FinPara
+	
     suma <- notas[1] + notas[2] + notas[3]
     promedio <- suma / 3
     
